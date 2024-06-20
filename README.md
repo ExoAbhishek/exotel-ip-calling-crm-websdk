@@ -13,19 +13,19 @@ npm install git+https://github.com/ExoAbhishek/exotel-ip-calling-crm-websdk#v1.0
 
 ## Using the Package in a Project:
 
-Refer to sample project [here](https://github.com/exotel/exotel_websdk_crm/tree/pu) or read on.
+Refer to sample project [here](https://github.com/exotel/exotel-voip-websdk-crm) or read on.
 
 1. Simply import the ExotelCRMWebSDK in your code like this:
 ```js
 import ExotelCRMWebSDK from "exotel-ip-calling-crm-websdk";
 ```
 
-2. Configure crmWebSDK object like this:
+1. Configure crmWebSDK object like this:
 ```js
 const crmWebSDK = new ExotelCRMWebSDK(accessToken, userId, true);
 ```
 
-3. **ExotelCRMWebSDK**
+1. **ExotelCRMWebSDK**
     
     **contructor**
       
@@ -52,7 +52,7 @@ const crmWebSDK = new ExotelCRMWebSDK(accessToken, userId, true);
 
     Promise<ExotelWebPhoneSDK | void>: A promise that resolves to an instance of ExotelWebPhoneSDK if successful, or void if unsuccessful.
  
-4. Use the `Initialize` method on the `ExotelCRMWebSDK` object which returns Promise that resolves to `ExotelWebPhoneSDK` object.
+1. Use the `Initialize` method on the `ExotelCRMWebSDK` object which returns Promise that resolves to `ExotelWebPhoneSDK` object.
     `ExotelCRMWebSDK` does all the work to get necessary details required for the `ExotelWebPhoneSDK`
 
 ```javascript
